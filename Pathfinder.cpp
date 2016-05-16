@@ -73,10 +73,4 @@ std::vector<Point> Pathfinder::reconstructPath(Node endNode)
 {
 	std::vector<Point> path;
 	Node currentNode = endNode;
-
-	while (currentNode != nullptr)
-	{
-		path.push_back(currentNode);
-		currentNode = currentNode.cameFrom;
-	}
 }
